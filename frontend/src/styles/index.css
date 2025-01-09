@@ -1,0 +1,23 @@
+/* Global Styles */
+
+:root {
+    --primary-black: #000002;
+    --primary-white: #fffffe;
+    --secondary-white: #fffffee3;
+    --secondary-black: #222121fa;
+    --success: #90ee90;
+    --warning: #ffa07a;
+    --error:  #dc143c;
+    --font-style: /* use IntelMono NFM */;
+    --font-mx-size: 1.3rem;
+    --font-mn-size: .7rem;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-white);
+    color: var(--primary-black);
+    font-family: var(--font-style);
+}
