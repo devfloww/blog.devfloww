@@ -1,0 +1,21 @@
+- var title= "devfloww Blog | Porfotlio" 
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        style
+            include ../styles/index.css
+            include ../styles/navbar.css
+        
+    body
+        div.navbar#navbar
+            ul 
+                li.home#home: a(href='#') devfloww
+                li.blog#blog: a(href='#') Blog
+                li.contact#contact: a(href='#') Contact Me
+
+        //- Scripts
+        script(src="../scripts/main.js") 

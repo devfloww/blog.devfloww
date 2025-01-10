@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon ./backend/src/index.js",
-    "pug": "pug ./frontend/src/pug/* -o ./frontend/public/pages -P"
+    "pug": "pug ./frontend/src/pug/* -o ./frontend/public/pages -P",
+    "pug-watch": "pug -w ./frontend/src/pug/* -o ./frontend/public/pages -P"
   },
   "author": "devfloww",
   "license": "MIT",
