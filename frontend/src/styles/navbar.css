@@ -35,7 +35,7 @@
 .navbar ul li {
     margin: .3rem 3rem;
     padding: .5rem;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .navbar ul li:hover {
     transition: .3s;

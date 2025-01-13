@@ -12,6 +12,7 @@
   "author": "devfloww",
   "license": "MIT",
   "dependencies": {
+    "bootstrap-icons": "^1.11.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "morgan": "^1.10.0",
@@ -27,7 +28,5 @@
   "bugs": {
     "url": "https://github.com/devfloww/blog.devfloww/issues"
   },
-  "homepage": "https://github.com/devfloww/blog.devfloww#readme",
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/devfloww/blog.devfloww#readme"
 }

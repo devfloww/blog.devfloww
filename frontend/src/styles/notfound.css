@@ -1,0 +1,179 @@
+:root {
+    --primary: #070F2B;
+    --secondary: #1B1A55;
+    --font-color: #D9EAFD; 
+    --success: #15F5BA;
+    --warning: #ffa07a;
+    --error:  #dc143c;
+    --font-style: 'IntoneMono Nf';
+    --font-mx-size: 1.3rem;
+    --font-mn-size: .7rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.notfound {
+    margin-top: 80px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.notfound span {
+    font-size: 15rem;
+    font-weight: 800;
+    color: #b3c5da;
+}
+
+
+.notfound-shadow {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.notfound-shadow span {
+    font-size: 15rem;
+    font-weight: 800;
+    color: #34465c;
+}
+
+#zero {
+    animation: blink-animation 3s infinite;
+    animation-direction: unset;
+}
+
+.container p {
+    font-size: larger;
+    font-weight: 300;
+}
+.container span a {
+    color: var(--font-color);
+    padding: .5rem;
+    border-radius: 2px; 
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.container span a:hover {
+    font-weight: 800;
+    transition: .3s;
+    color: var(--primary);
+    text-underline-offset: 7px; 
+}
+
+.container span a:hover {
+    transition: .5s;
+    background-image: linear-gradient(to right, var(--success), var(--warning), var(--error));
+    background-size: 300% 100%; 
+    background-position: 0% 50%; 
+    animation: gradient-animation 5s ease infinite; 
+}
+
+/* Animations */
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+@keyframes blink-animation {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: var(--secondary);
+    }
+    8% {
+        color: #b3c5da;
+    }
+    15% {
+        color: transparent;
+    }
+    18% {
+        color: #b3c5da;
+    }
+    28% {
+        color: var(--font-color);
+    }
+    30% {
+        color: #b3c5da;
+    }
+    35% {
+        color: var(--secondary);
+    }
+    37% {
+        color: var(--font-color);
+    }
+    43% {
+        color: transparent;
+    }
+    45% {
+        color: var(--font-color);
+    }
+    47% {
+        color: transparent;
+    }
+    49% {
+        color: var(--secondary);
+    }
+    50% {
+        color: transparent;
+    }
+    52% {
+        color: var(--font-color);
+    }
+    65% {
+        color: transparent;
+    }
+    67% {
+        color: var(--secondary);
+    }
+    69% {
+        color: transparent;
+    }
+    70% {
+        color: var(--font-color);
+    }
+    75% {
+        color: #b3c5da;
+    }
+    80% {
+        color: transparent;
+    }
+    85% {
+        color: transparent;
+    }
+    95% {
+        color: var(--secondary);
+    }
+    97% {
+        color: #b3c5da;
+    }
+    98% {
+        color: transparent;
+    }
+    100% {
+        color: var(--secondary);
+    }
+    
+}

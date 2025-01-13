@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>devfloww Blog | Porfotlio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
       /* Global Styles */
 
@@ -31,10 +33,13 @@
 body {
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
     inset: 0;
-    background: var(--primary);
+    background-color: var(--primary);
+    /* background: conic-gradient(from 90deg at 1px 1px, #0000 25%, gainsboro 0%) -0.5px -0.5px/1em 1em, linear-gradient(45deg, #0000 calc(50% + -1*0.5px), gainsboro 0 calc(50% + 0.5px), #0000 0) 0 0/2em 2em, linear-gradient(-45deg, #0000 calc(50% + -1*0.5px), gainsboro 0 calc(50% + 0.5px), #0000 0) 0 0/2em 2em; */
     color: var(--font-color);
     font-family: var(--font-style);
 }
@@ -75,7 +80,7 @@ body {
 .navbar ul li {
     margin: .3rem 3rem;
     padding: .5rem;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .navbar ul li:hover {
     transition: .3s;
@@ -140,27 +145,6 @@ body {
     .navbar a {
       font-size: 1.2rem;
     }
-  }@media (max-width: 768px) { 
-    /* Styles for screens smaller than 768px (e.g., tablets and smaller) */
-    .navbar {
-      height: auto; 
-      flex-direction: column; 
-      align-items: center; 
-    }
-  
-    .navbar ul {
-      flex-direction: column; 
-      padding-left: 0; 
-    }
-  
-    .navbar ul li {
-      margin: 1rem 0; /* Adjust vertical and horizontal margins */
-      padding: 1rem;
-    }
-  
-    .navbar a {
-      font-size: 1.5rem; /* Reduce font size */
-    }
   }
     </style>
   </head>
@@ -174,6 +158,7 @@ body {
         </ul>
       </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"> </script>
     <script src="../scripts/main.js"> </script>
   </body>
 </html>
