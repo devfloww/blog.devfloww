@@ -1,14 +1,21 @@
 /* Global Styles */
 
+/* Fonts */
+@font-face {
+    font-family: 'IntoneMono Nf';
+    src: url('../../assets/fonts/IntoneMonoNerdFont-Regular.ttf') format('truetype'),
+         url('../../assets/fonts/IntoneMonoNerdFontPropo-Bold.ttf') format('truetype'),
+         url('../../assets/fonts/IntoneMonoNerdFontPropo-Italic.ttf') format('truetype');
+}
+
 :root {
-    --primary-black: #000002;
-    --primary-white: #fffffe;
-    --secondary-white: #fffffee3;
-    --secondary-black: #222121fa;
-    --success: #90ee90;
+    --primary: #070F2B;
+    --secondary: #1B1A55;
+    --font-color: #D9EAFD; 
+    --success: #15F5BA;
     --warning: #ffa07a;
     --error:  #dc143c;
-    --font-style: /* use IntelMono NFM */;
+    --font-style: 'IntoneMono Nf'; /* use IntoneMono NFM */;
     --font-mx-size: 1.3rem;
     --font-mn-size: .7rem;
 
@@ -17,7 +24,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--primary-white);
-    color: var(--primary-black);
+    height: 100vh;
+    width: 100%;
+    inset: 0;
+    background: var(--primary);
+    color: var(--font-color);
     font-family: var(--font-style);
 }

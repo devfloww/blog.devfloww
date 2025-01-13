@@ -9,13 +9,11 @@ html(lang="en")
         style
             include ../styles/index.css
             include ../styles/navbar.css
+            include ../styles/navbar.mediaqueries.css
+            
         
     body
-        div.navbar#navbar
-            ul 
-                li.home#home: a(href='#') devfloww
-                li.blog#blog: a(href='#') Blog
-                li.contact#contact: a(href='#') Contact Me
-
+        include ./navbar.pug
+       
         //- Scripts
         script(src="../scripts/main.js") 
