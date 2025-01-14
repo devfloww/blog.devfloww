@@ -2,17 +2,17 @@
 // Importing dependencies
 import express from "express"
 
+// Importing Controller functions
+import {
+    Return404,
+} from "../Controllers/Controllers.js"
+
 // Routes handlers object
 const Router = express.Router()
 
 // Endpoints
 // 404 NotFound endpoint
-Router.all('*', (req, res, next) => {
-    res.status(404).json({
-        "error": "Invalid Endpoint. Check and try again"
-    })
-})
-
+Router.all('*', Return404)
 
 export {
     Router

@@ -1,6 +1,9 @@
 // Back-end of the blog | portfolio site
 
 // Importing dependencies
+import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+// Packages
 import dotenv from "dotenv"
 dotenv.config()
 import express from "express"
@@ -9,8 +12,14 @@ import morgan from "morgan"
 import { Router } from "./src/Routes/Routes.js"
 
 // Constants and Globals
+const __dirname = dirname(fileURLToPath(import.meta.url))
 const port = process.env.PORT ?? 3000
 const app = express()
+
+// views
+app.set('views', __dirname+'views')
+console.log(__dirname)
+app.set('views engine', 'pug')
 
 // Middlewares
 app.use(express.json()) // use json
