@@ -1,11 +1,12 @@
 // Controller functions
 
 // Imports
-import { dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-    
-const __dirname = dirname(fileURLToPath(import.meta.url))
 
+// 404 Not found page
 export const Return404 = (req, res) => {
-    return res.sendFile(__dirname+'../../../../frontend/public/pages/notfound.html')
+    return res.render('notfound')
+}
+
+export const Home = (req, res) => {
+    return res.render('index')
 }

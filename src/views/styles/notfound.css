@@ -5,7 +5,6 @@
     --success: #15F5BA;
     --warning: #ffa07a;
     --error:  #dc143c;
-    --font-style: 'IntoneMono Nf';
     --font-mx-size: 1.3rem;
     --font-mn-size: .7rem;
 
@@ -35,19 +34,6 @@
     color: #b3c5da;
 }
 
-
-.notfound-shadow {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-}
-
-.notfound-shadow span {
-    font-size: 15rem;
-    font-weight: 800;
-    color: #34465c;
-}
 
 #zero {
     animation: blink-animation 3s infinite;
@@ -98,7 +84,7 @@
 
 @keyframes blink-animation {
     0% {
-        color: transparent;
+        color: #31313d;
     }
     5% {
         color: var(--secondary);
@@ -107,7 +93,7 @@
         color: #b3c5da;
     }
     15% {
-        color: transparent;
+        color: #31313d;
     }
     18% {
         color: #b3c5da;
@@ -125,31 +111,31 @@
         color: var(--font-color);
     }
     43% {
-        color: transparent;
+        color: #31313d;
     }
     45% {
         color: var(--font-color);
     }
     47% {
-        color: transparent;
+        color: #31313d;
     }
     49% {
         color: var(--secondary);
     }
     50% {
-        color: transparent;
+        color: #31313d;
     }
     52% {
         color: var(--font-color);
     }
     65% {
-        color: transparent;
+        color: #31313d;
     }
     67% {
         color: var(--secondary);
     }
     69% {
-        color: transparent;
+        color: #31313d;
     }
     70% {
         color: var(--font-color);
@@ -158,10 +144,10 @@
         color: #b3c5da;
     }
     80% {
-        color: transparent;
+        color: #31313d;
     }
     85% {
-        color: transparent;
+        color: #31313d;
     }
     95% {
         color: var(--secondary);
@@ -170,7 +156,7 @@
         color: #b3c5da;
     }
     98% {
-        color: transparent;
+        color: #31313d;
     }
     100% {
         color: var(--secondary);
