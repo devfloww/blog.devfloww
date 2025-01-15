@@ -29,7 +29,7 @@ if (process.env.APP_STATE === 'dev') {
 }
 
 // Routes
-app.use('', Router)
+app.use('/', Router)
 
 // Server app init
 app.listen(port, console.log(`Backend server running on port: ${port}`))

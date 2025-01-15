@@ -31,3 +31,8 @@ body {
     font-style: normal;
 }
 
+hr {
+    border-radius: 70%;
+    border-color: var(--warning);
+}
+

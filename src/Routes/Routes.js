@@ -13,7 +13,7 @@ const Router = express.Router()
 
 // Endpoints
 // 404 NotFound endpoint
-Router.get('/not', Return404)
+Router.get('/lol', Return404)
 
 // Home page
 Router.get('/', Home)

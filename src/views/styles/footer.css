@@ -1,0 +1,32 @@
+:root {
+    --primary: #070F2B;
+    --secondary: #1B1A55;
+    --font-color: #D9EAFD; 
+    --success: #15F5BA;
+    --warning: #ffa07a;
+    --error:  #dc143c;
+    --font-mx-size: 1.3rem;
+    --font-mn-size: .7rem;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.links {
+    padding: 5px;
+}
+
+.links i {
+    font-size: 1rem;
+    color: var(--font-color);
+    padding: .5vw;
+
+}
